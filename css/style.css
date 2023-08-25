@@ -1,0 +1,148 @@
+:root{
+    /*declaracao de variaveis*/
+    --primary : #0c88e7;
+    --primary-contrast : #aed2f5;
+    --wite: #ffffff;
+    --secondary-contrast:  #1506a3;
+}
+
+*{ /*serve para todo o projeto */
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: var(--primary-dark);    
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+h2{
+    font-size: 30px;
+    color: var(--wite);    
+}
+
+p{
+    font-size: 18px;
+    line-height: 120%;/*espaco entre linhas*/
+    color: var(--gray-light);
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto ; /* centraliza a div */
+    width: 100%;
+    height: 550px;
+}    
+
+.header{
+     background-color: var(--primary-dark);
+     width: 100%;
+     position: sticky;/* fixo */
+     top: 0;
+     z-index: 1000; /* quanto maior mais a frente ele estara na frente de qualquer position*/
+}
+
+.header .container{
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/bacground.jpg");
+    height: 30rem;
+    background-size: cover;
+    height:250px ;
+    text-align: center;
+    font-size: 40px;
+    color: var(--wite); 
+}
+
+.formulario{
+    display: flex;
+    column-gap: 20px;
+}
+
+.container2{
+    width: 700px;
+    margin: 0 auto;
+   /* height: 400px;   */
+} 
+
+.calculo .content h3{
+    padding: 50px 0px 0px 0px;
+    text-align  : center;
+    font-size   : 22px;
+    color       : black;
+}
+
+.calculo .content p{
+    padding: 0px 0px 40px ;
+    text-align  : left;
+    font-size   : 16px;
+    color       : black;
+}
+
+.calculo .content .formulario p{
+    padding: 0px 0px  0px 0px;
+    text-align  : left;
+    font-size   : 16px;
+    color       : black;
+}
+
+.calculo .content input{
+   
+     width: 300px;
+     border: 1px solid black;
+     background-color: transparent;
+     margin-bottom: 5px; 
+     padding: 5px 5px;
+     box-sizing: border-box;/* define a largura do box e nenhum elemento passa dele */
+     font-size: 16px;
+     color: var(--gray-light);
+}
+
+
+.btn{
+    background-color: var(--secondary-contrast);
+    color: var(--wite);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 2px 40px;
+    border-radius: 3%;
+    display: list-item;
+    border: solid 1px ;
+    cursor: pointer;
+}  
+
+.btn:hover{
+    background-color : var(--primary);
+}
+
+
+.card {
+    background-color: blue;
+    padding: 35px 280px 15px 15px;    
+    margin: 50px 150px 30px ;
+}
+
+.texto{
+    color: var(--wite);
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+}
+
+
+.footer{
+    background-color: #003366;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;     
+    text-align: center;
+    padding: 15px 195px;
+    box-sizing: border-box;
+    color: var(--wite);
+    font-size: 18px;
+    line-height: 120%;
+}
+
